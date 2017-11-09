@@ -1,0 +1,24 @@
+{
+    "name": "wielski/kinopoisk",
+    "description": "Laravel wrapper for Kinopoisk API",
+    "keywords": [
+        "laravel",
+        "kinopoisk",
+        "api"
+    ],
+    "license": "proprietary",
+    "type": "library",
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "^6.0",
+        "illuminate/support": "^5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wielski\\Kinopoisk\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.2"
+    }
+}
