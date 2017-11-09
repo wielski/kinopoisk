@@ -2,6 +2,7 @@
 
 namespace Wielski\Kinopoisk;
 
+use Wielski\Kinopoisk\Api\Media\Films;
 use Wielski\Kinopoisk\Support\HttpClient;
 
 /**
@@ -23,5 +24,13 @@ class Client
     public function __construct(array $options = [])
     {
         $this->client = new HttpClient($options);
+    }
+
+    /**
+     * @return Films
+     */
+    public function films(): Films
+    {
+        return new Films($this->client);
     }
 }
